@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Template 1</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="w3.css">
+            <link rel="stylesheet" href="font/css/font-awesome.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script src="jquery.scrollTo.min.js"> </script>
+            <script>
+                jQuery(function($)
+                {
+                    $.scrollTo(0); //reset scrolla
+
+                    $('#skill').click(function()
+                        { $.scrollTo($('#skills'), 200);  
+                        })
+
+                    $('#website').click(function()
+                        { $.scrollTo($('#websites'), 200);  
+                        })
+                    $('#contact').click(function()
+                    {
+                        $.scrollTo($('#contacts'), 200);
+                    })
+                    
+                    $('.scrollup').click(function(){
+                        $.scrollTo($('body'),200);
+                    })
+                }
+                );
+
+                //pokaż podczas przewijania
+                
+                $(window).scroll(function()
+                {
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+                );
+            </script>
+        </head>
+        <body class="w3-theme-l5">
+            <div class="w3-display-container">
+                <img src="images/img3_min.jpg" style="width:100%;">
+            </div>
+            <a href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i></a>
+            
+            <div class="w3-bar w3-theme-d5 w3-center w3-padding">
+                
+                <span class="w3-bar-item w3-border-bottom"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <a id="skill" href="#" class="w3-bar-item w3-button">SKILLS</a>
+                <a id="website" href="#" class="w3-bar-item w3-button">WEBSITES</a>
+                <a id="contact" href="#" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-panel">
+                    <div class="w3-container w3-center"><h1><i class="fa fa-user-o" aria-hidden="true"></i></h1></div>
+                    <div class="w3-container w3-center"><h1>I'm Some Person.</h1></div>
+                    <div class="w3-container w3-center"><h4>Junior Web Designer.</h4></div>
+                    <div class="w3-panel" id="skills">
+                        <h1>My skills</h1>
+                        <hr>
+                        Some text
+                        Suscipit quisquam et ut pariatur.
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                    </div>
+                    <div class="w3-panel" id="websites">
+                        <h1>My websites</h1>
+                        <hr>
+                        Some text
+                        Suscipit quisquam et ut pariatur.
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        <div class="w3-row-padding w3-panel">
+                            <img src="images/img1.jpg" class="w3-third w3-grayscale">
+                            <img src="images/img1.jpg" class="w3-third w3-opacity-min">
+                            <img src="images/img1.jpg" class="w3-third w3-sepia">
+                        </div>
+                    </div>
+                    <div class="w3-panel">
+                        <h1>My experience</h1>
+                        <hr>
+                        Some text
+                        Suscipit quisquam et ut pariatur.
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                        Reiciendis voluptas ducimus soluta eveniet harum et culpa cumque. Et et odit ab nihil delectus consequatur. In hic labore voluptas placeat animi ac…
+                    </div>
+                    <div class="w3-panel">
+                        <h1>Websites with me are simple to order</h1>
+                        <hr>
+                        <div class="w3-row-padding w3-panel">
+                            <div class="w3-panel"><i class="fa fa-arrow-right w3-margin" aria-hidden="true"></i>Leave a message, make a call or send an email.</div>
+                            <div class="w3-panel"><i class="fa fa-arrow-right w3-margin" aria-hidden="true"></i>Determine suitable parameters and price.</div>
+                            <div class="w3-panel"><i class="fa fa-arrow-right w3-margin" aria-hidden="true"></i>If all aspect are good give me time for make it.</div>
+                            <div class="w3-panel"><i class="fa fa-arrow-right w3-margin" aria-hidden="true"></i>Check that everything is as you wanted, if not, I would change it.</div>
+                            <div class="w3-panel"><i class="fa fa-arrow-right w3-margin" aria-hidden="true"></i>Enjoy your new website.</div>
+                        </div>
+                    </div>
+                    <div class="w3-panel" id="contacts">
+                        <h1>Contact with me</h1>
+                        <hr>
+                        <div class="w3-row-padding w3-panel">
+                            <div class="w3-panel"><i class="fa fa-map-marker w3-margin" aria-hidden="true"></i>Poland, PL</div>
+                            <div class="w3-panel"><i class="fa fa-phone w3-margin" aria-hidden="true"></i>000-000-000</div>
+                            <div class="w3-panel"><i class="fa fa-envelope w3-margin" aria-hidden="true"></i>somemail@gmail.pl</div>
+                            <form class="w3-panel w3-margin">
+                                <p>Leave a message</p>
+                                <input type="text" class="w3-input w3-margin" placeholder="Name">
+                                <input type="text" class="w3-input w3-margin" placeholder="E-mail">
+                                <input type="text" class="w3-input w3-margin" placeholder="Message">
+                                <button class="w3-button w3-margin">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container w3-theme-d5 w3-padding">
+                <div class="w3-panel"><i class="fa fa-globe w3-margin" aria-hidden="true"></i>All rights reserved. Powered by Some Person.</div>
+            </div>
+        </body>
+    </html>
