@@ -1,9 +1,3 @@
-@media only screen and (max-width: 360px) {
-    body {
-        width: 80%;
-        background: yellow;
-    }
-}
 /* W3.CSS 2.97 Feb 2017 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /*Page theme*/
