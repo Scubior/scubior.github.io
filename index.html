@@ -9,8 +9,8 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
             <script src="jquery.scrollTo.min.js"> </script>
             <script>
-                jQuery(function($)
-                {
+                    $(document).ready(function(){
+                    $('.scrollup').hide();
                     $.scrollTo(0); //reset scrolla
 
                     $('#skill').click(function()
@@ -28,24 +28,22 @@
                     $('.scrollup').click(function(){
                         $.scrollTo($('body'),200);
                     })
-                }
-                );
+                    //pokaż/ukryj podczas przewijania
 
-                //pokaż podczas przewijania
-                
-                $(window).scroll(function()
-                {
-                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-                    else $('.scrollup').fadeOut();
-                }
-                );
+                    $(window).scroll(function()
+                    {
+                        if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                        else $('.scrollup').fadeOut();
+                    }
+                    );
+                });
             </script>
         </head>
         <body class="w3-theme-l5">
             <div class="w3-display-container">
                 <img src="images/img3_min.jpg" style="width:100%;">
             </div>
-            <a href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i></a>
+            <div href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x" aria-hidden="true"></i></div>
             
             <div class="w3-bar w3-theme-d5 w3-center w3-padding">
                 
